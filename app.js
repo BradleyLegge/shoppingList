@@ -38,13 +38,14 @@ function displayList(){
 }
 
 function createListItem(i){
-    const element = document.createElement('li')
+    let element = document.createElement('li')
     element.innerHTML = `${i}`
     toDoList.appendChild(element)
 }
 
 function clearArray(){
     localStorage.clear('list')
+    toDoList.remove()
 }
 
 

@@ -5,6 +5,16 @@
 }
 
 :root{
+    --blue: #659DBD;
+    --tan: #FBEEC1;
+    --tan-brown: #BC986A;
+
+    --light-grey: #6B6E70;
+    --grey: #474B4F;
+    --dark-grey: #222629;
+    --lime-green: #86C232;
+    --dark-lime-green: #61892F;
+    
 
 }
 
@@ -19,25 +29,30 @@ section{
     align-items: center;
     margin: auto;
     width: 600px;
-    background-color: beige;
+    background-color: var(--dark-grey);
     border-radius: 8px;
+    padding: 20px;
 }
 
 h1{
     text-align: center;
     padding: 30px;
+    color: var(--lime-green)
 }
 
 hr{
     width: 60%;
+    color: var(--light-grey);
 }
 
 input{
-    border: 1px solid gray;
+    border: none;
+    border-radius: 8px;
     padding: 8px;
     font-size: 16px;
     margin: 20px 0;
     width: 50%;
+    color: var(--light-grey);
 }
 
 button{
@@ -45,12 +60,25 @@ button{
     padding: 10px;
     border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
     border: none;
-    background-color: coral;
-    color: beige;
+    background-color: var(--lime-green);
+    color: var(--grey);
 }
 
 button:hover{
     cursor: pointer;
-    background-color: lightcoral;
+    background-color: var(--dark-lime-green);
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li{
+    font-size: 20px;
+    color: var(--lime-green); 
 }
